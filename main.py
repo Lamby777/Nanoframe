@@ -6,7 +6,6 @@ import replit
 sub = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
 
 prefixes = [
-	"YourMom",
 	"Mon",
 	"Di",
 	"Tri",
@@ -18,22 +17,22 @@ prefixes = [
 ]
 
 metals = [
-	{"name": "Lithium", "ve": 1},
-	{"name": "Beryllium", "ve": 2}
+	{"name": "lithium", "ve": 1},
+	{"name": "beryllium", "ve": 2}
 ]
 
 nonmetals = [
-	{"name":"Oxygen", "ve":6}
+	{"name":"oxygen", "ve":6, "dn": "oxide"}
 ]
 
 def makeBond():
 	m = choice(metals)
 	nm = choice(nonmetals)
-	bondname = ""
+	bondname = ["{}"+m["name"], "{}"+nm["dn"]]
 	# Algorithm
-	if m.ve > nm.ve:
+	if m["ve"] > nm["ve"]:
 		pass
-	elif m.ve < nm.ve:
+	elif m["ve"] < nm["ve"]:
 		pass
 	else:
 		pass
