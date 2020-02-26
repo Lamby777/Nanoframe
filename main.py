@@ -28,7 +28,7 @@ nonmetals = [
 
 def makeBond():
 	m = choice(metals)
-	nm = choice(nonmetals)
+	nm = choice(nonmetals) #
 
 print(colored("Welcome to Nanoframe!\n" \
 	"Press enter to make a bond.", "red")); input()
